@@ -1,12 +1,22 @@
-# Sim IDX Sample Project
+# Uniswap V4 4 Hook Observatory
+Sim IDX is a framework that helps you build and deploy applications that index blockchain data in minutes. Define listeners that react to specific onchain events, extract relevant data, and automatically make this data queryable via an API.
 
-**Sim IDX** is a framework that helps you build and deploy applications that index blockchain data in minutes. Define listeners that react to specific onchain events, extract relevant data, and automatically make this data queryable via an API.
+This app indexes pool creation and activity events on Uniswap v4 and exposes an endpoint which can be used to query which hooks are attached to each pool and to track adoption and usage of different hook types over time.
 
-This sample project indexes **Uniswap V3 Factory pool creation events** and serves as your starting point for building with Sim IDX.
+## Exposed API
+...
+...
+...
 
-When you're ready to continue, the [Quickstart guide](https://docs.sim.dune.com/idx) will walk you through authenticating and testing your listener on real data.
+## Indexing Methodology
+...
+...
+...
 
-## What You'll Edit
+## Querying Methodology
+...
+...
+...
 
 The main files and folders you'll work with are:
 
@@ -29,9 +39,7 @@ The main files and folders you'll work with are:
         └── Main.t.sol           # Unit tests for your listener
 ```
 
-The `listeners/` directory is a Foundry project where your indexing logic lives. For a detailed breakdown of each file and folder, see the [App Folder Structure](https://docs.sim.dune.com/idx/app-structure) documentation.
-
-## Next Steps
+## SIM IDX: Quickstart Resources
 
 Ready to start building? Check out our comprehensive guides:
 
