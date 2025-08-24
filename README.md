@@ -4,9 +4,43 @@ Sim IDX is a framework that helps you build and deploy applications that index b
 This app indexes pool creation and activity events on Uniswap v4 and exposes an endpoint which can be used to query which hooks are attached to each pool and to track adoption and usage of different hook types over time.
 
 ## Exposed API
-...
-...
-...
+
+We expose the following API:  
+
+`/v4/pools?chain=eth&token0=0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48&token1=0x6b175474e89094c44da98b954eedeac495271d0f&fee=500&tickSpacing=10`
+
+This will then output the pool(s) that match the given parameters, including the hook attached at initialization:
+
+```json
+{
+  "result": [
+    {
+      "poolId": "0x8b2e1f...c1a4",
+      "chain": "eth",
+      "currency0": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "currency1": "0x6b175474e89094c44da98b954eedeac495271d0f",
+      "fee": 500,
+      "tickSpacing": 10,
+      "hooks": "0x1234abcd5678ef901234abcd5678ef901234abcd",
+      "initializedAt": 20757832,
+      "sqrtPriceX96": "79228162514264337593543950336",
+      "tick": -276324
+    },
+    {
+      "poolId": "0x91cd9a...b442",
+      "chain": "eth",
+      "currency0": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "currency1": "0x6b175474e89094c44da98b954eedeac495271d0f",
+      "fee": 500,
+      "tickSpacing": 10,
+      "hooks": "0x9abcdeffedcba987654321009876543210abcdef",
+      "initializedAt": 20757890,
+      "sqrtPriceX96": "79228162514264337593543950336",
+      "tick": -276320
+    }
+  ],
+  "nextCursor": null
+}
 
 ## Indexing Methodology
 ...
@@ -31,7 +65,7 @@ The main files and folders you'll work with are:
 ├── sim.toml                       # App configuration
 ├── apis/                          # Your custom API code
 ├── abis/                          # Contract ABI files (JSON)
-│   └── UniswapV4PoolManager.json  # Example: Uniswap V4 PoolManager ABI
+│   └── UniswapV4PoolManager.json  # Uniswap V4 PoolManager ABI
 └── listeners/                     # Foundry project for listener contracts
     ├── src/
     │   └── Main.sol               # Triggers contract & listener logic
