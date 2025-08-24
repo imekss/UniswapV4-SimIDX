@@ -28,15 +28,15 @@ The main files and folders you'll work with are:
 
 ```text
 .
-├── sim.toml                     # App configuration
-├── apis/                        # Your custom API code
-├── abis/                        # Contract ABI files (JSON)
-│   └── UniswapV3Factory.json    # Example: Uniswap V3 Factory ABI
-└── listeners/                   # Foundry project for listener contracts
+├── sim.toml                       # App configuration
+├── apis/                          # Your custom API code
+├── abis/                          # Contract ABI files (JSON)
+│   └── UniswapV4PoolManager.json  # Example: Uniswap V4 PoolManager ABI
+└── listeners/                     # Foundry project for listener contracts
     ├── src/
-    │   └── Main.sol             # Triggers contract & listener logic
+    │   └── Main.sol               # Triggers contract & listener logic
     └── test/
-        └── Main.t.sol           # Unit tests for your listener
+        └── Main.t.sol             # Unit tests for your listener
 ```
 
 ## SIM IDX: Quickstart Resources
