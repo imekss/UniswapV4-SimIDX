@@ -1,4 +1,4 @@
-# Uniswap V4 4 Hook Observatory
+# Uniswap V4 Hook Observatory
 Sim IDX is a framework that helps you build and deploy applications that index blockchain data in minutes. Define listeners that react to specific onchain events, extract relevant data, and automatically make this data queryable via an API.
 
 This app indexes pool creation and activity events on Uniswap v4 and exposes an endpoint which can be used to query which hooks are attached to each pool and to track adoption and usage of different hook types over time.
