@@ -7,7 +7,7 @@ This app indexes pool creation and activity events on Uniswap v4 and exposes an 
 
 We expose the following API:  
 
-`/v4/pools?chain=eth&token0=0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48&token1=0x6b175474e89094c44da98b954eedeac495271d0f&fee=500&tickSpacing=10`
+`/v4/`
 
 This will then output the pool(s) that match the given parameters, including the hook attached at initialization:
 
