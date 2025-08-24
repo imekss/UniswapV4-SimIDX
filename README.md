@@ -38,8 +38,7 @@ This will then output the pool(s) that match the given parameters, including the
       "sqrtPriceX96": "79228162514264337593543950336",
       "tick": -276320
     }
-  ],
-  "nextCursor": null
+  ]
 }
 ```
 
