@@ -41,6 +41,7 @@ This will then output the pool(s) that match the given parameters, including the
   ],
   "nextCursor": null
 }
+```
 
 ## Indexing Methodology
 ...
