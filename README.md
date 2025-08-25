@@ -1,6 +1,6 @@
 # Uniswap V4 Hook Observatory
 This app indexes pool creation and activity events on Uniswap v4 and exposes an API endpoint that can be used to:
-- Query which hooks are attached to each pool at initialization.
+- Query which **hooks** are attached to each pool at initialization.
 - Track the adoption and usage of different hook types over time.
 
 
