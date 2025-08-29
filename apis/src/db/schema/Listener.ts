@@ -4,6 +4,8 @@ import * as t from "drizzle-orm/pg-core";
 import { db, types } from "@duneanalytics/sim-idx";
 
 export const poolInitialized = table("pool_initialized", {
+  chainId: db.uint64('chain_id'),
+  caller: db.address('caller'),
   currency0: db.address('currency0'),
   currency1: db.address('currency1'),
   fee: db.uint24('fee'),

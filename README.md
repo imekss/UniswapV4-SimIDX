@@ -16,32 +16,40 @@ This will then output the pool(s) that match the given parameters, including the
 
 ```json
 {
-  "result": [
-    {
-      "poolId": "0x8b2e1f...c1a4",
-      "chain": "eth",
-      "currency0": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-      "currency1": "0x6b175474e89094c44da98b954eedeac495271d0f",
-      "fee": 500,
-      "tickSpacing": 10,
-      "hooks": "0x1234abcd5678ef901234abcd5678ef901234abcd",
-      "initializedAt": 20757832,
-      "sqrtPriceX96": "79228162514264337593543950336",
-      "tick": -276324
-    },
-    {
-      "poolId": "0x91cd9a...b442",
-      "chain": "eth",
-      "currency0": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-      "currency1": "0x6b175474e89094c44da98b954eedeac495271d0f",
-      "fee": 500,
-      "tickSpacing": 10,
-      "hooks": "0x9abcdeffedcba987654321009876543210abcdef",
-      "initializedAt": 20757890,
-      "sqrtPriceX96": "79228162514264337593543950336",
-      "tick": -276320
-    }
-  ]
+  "schema": {
+    "chainId": 8453,
+    "caller": "498581ff718922c3f8e6a244956af099b2652b2b",
+    "currency0": "30c3672ee1562a138e3cabf9186208e25117743b",
+    "currency1": "5657395cbccb2d671593a9a7e823e7f4b56e2b52",
+    "fee": 30000,
+    "tickSpacing": 200,
+    "hooks": "9ea932730a7787000042e34390b8e435dd839040",
+    "sqrtPriceX96": "1178734673953441494749930375074",
+    "tick": 54000
+  },
+  "metadata": {
+    "block_number": 33496106,
+    "block_timestamp": 1753781559,
+    "chain_id": 8453
+  }
+}
+{
+  "schema": {
+    "chainId": 8453,
+    "caller": "498581ff718922c3f8e6a244956af099b2652b2b",
+    "currency0": "08a80f074b04b0866781679c7e216ca705f23030",
+    "currency1": "f9922f341079fa9d10d3a7ad92a198496a2e6d95",
+    "fee": 30000,
+    "tickSpacing": 200,
+    "hooks": "9ea932730a7787000042e34390b8e435dd839040",
+    "sqrtPriceX96": "5325288102651180869496681778",
+    "tick": -54000
+  },
+  "metadata": {
+    "block_number": 33496106,
+    "block_timestamp": 1753781559,
+    "chain_id": 8453
+  }
 }
 ```
 
