@@ -64,7 +64,7 @@ _Details coming soon._
 └── listeners/                      # Foundry project for listener contracts
     ├── src/
     │   └── Main.sol                # Triggers contract & listener logic
-    │   └── PoolManagerListener.sol # # Solidity listener for Uniswap v4 PoolManager
+    │   └── PoolManagerListener.sol # Solidity listener for Uniswap v4 PoolManager
     └── test/
         └── Main.t.sol              # Unit tests for your listener
 ```
