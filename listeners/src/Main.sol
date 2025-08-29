@@ -22,4 +22,3 @@ contract Triggers is BaseTriggers {
         );
     }
 }
- // address checksummed Solidity https://docs.soliditylang.org/en/develop/types.html#address-literals
