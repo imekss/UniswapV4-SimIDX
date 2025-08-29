@@ -4,7 +4,7 @@ It exposes API endpoints that can be used to:
 - Query which **hooks** are attached to each pool at initialization.  
 - Track the adoption and usage of different hook types over time. (soon)
 
-Built with [Dune SIM IDX](https://docs.sim.dune.com/idx), a framework that helps you index blockchain data in minutes by defining listeners that react to onchain events, extract relevant data, and automatically make it queryable via an API, with the option to extend your indexer using custom **Solidity** code to capture advanced onchain logic directly from smart contracts.
+Built with [Dune SIM IDX](https://docs.sim.dune.com/idx), a framework that helps you index blockchain data in minutes by defining listeners that react to onchain events, extract relevant data, and automatically make it queryable via an API, with the option to extend your indexer using custom **Solidity** code to capture advanced onchain logic directly from smart contracts . 
 
 ## Exposed API
 
