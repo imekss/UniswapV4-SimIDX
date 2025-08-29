@@ -1,9 +1,7 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.13;
-
 import "sim-idx-sol/Simidx.sol";
 import "sim-idx-generated/Generated.sol";
-
 contract PoolManagerListener is PoolManager$OnInitializeFunction {
     event PoolInitialized(
         uint64 chainId,
