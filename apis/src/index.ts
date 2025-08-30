@@ -1,5 +1,5 @@
 import { eq } from "drizzle-orm";
- import { poolInitialized } from "./db/schema/Listener"; // Adjust the import path as necessary
+import { poolInitialized } from "./db/schema/Listener"; // Adjust the import path as necessary
 import { types, db, App, middlewares } from "@duneanalytics/sim-idx"; // Import schema to ensure it's registered
 
 // const filterToken0 = types.Address.from(
