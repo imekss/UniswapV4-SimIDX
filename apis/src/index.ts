@@ -1,6 +1,6 @@
 import { eq } from "drizzle-orm";
-import { poolInitialized } from "./db/schema/Listener"; // Adjust the import path as necessary
-import { types, db, App, middlewares } from "@duneanalytics/sim-idx"; // Import schema to ensure it's registered
+import { poolInitialized } from "./db/schema/Listener"; 
+import { types, db, App, middlewares } from "@duneanalytics/sim-idx"; 
 
 
 const app = App.create();
