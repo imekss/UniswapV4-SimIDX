@@ -36,7 +36,7 @@ Built with [Dune SIM IDX](https://docs.sim.dune.com/idx), a framework that helps
       "tick": "-195334"
     }
   ]
-},
+}
 ```
 
 ## Indexing Methodology
