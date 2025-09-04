@@ -7,10 +7,10 @@ and expose APIs for hook adoption and usage analytics.
 - Indexes **pool initialization** (which tokens, fee tier, tick spacing, and hook address).
 - Indexes **pool swaps** (amounts, price movement, liquidity, tick).
 - Exposes API endpoints for:
-  - ✅ **Hook adoption** – which hooks are being used, and when they were first seen.
-  - ✅ **Pools by hook** – list pools initialized with a given hook.
-  - ✅ **Hook usage over time** – daily swap activity per hook.
-  - ✅ **Pool activity samples** – latest swaps or inits (for dashboards/testing).
+  - **Hook adoption** – which hooks are being used, and when they were first seen.
+  - **Pools by hook** – list pools initialized with a given hook.
+  - **Hook usage over time** – daily swap activity per hook.
+  - **Pool activity samples** – latest swaps or inits (for dashboards/testing).
 
 Built with [Dune SIM IDX](https://docs.sim.dune.com/idx), a framework that helps you index blockchain data in minutes by defining listeners that react to onchain events, extract relevant data, and automatically make it queryable via an API, with the option to extend your indexer using custom **Solidity** code to capture advanced onchain logic directly from smart contracts .
 
