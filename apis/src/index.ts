@@ -9,22 +9,22 @@ const app = App.create();
 app.use("*", middlewares.authentication);
 
 
-// app.get("/pool-inits", async (c) => {
-//   try {
-//     const result = await db
-//       .client(c)
-//       .select()
-//       .from(poolInitialized)
-//       .limit(5);
+app.get("/pool-inits", async (c) => {
+  try {
+    const result = await db
+      .client(c)
+      .select()
+      .from(poolInitialized)
+      .limit(5);
 
-//     return Response.json({
-//       result: result,
-//     });
-//   } catch (e) {
-//     console.error("Database operation failed:", e);
-//     return Response.json({ error: (e as Error).message }, { status: 500 });
-//   }
-// });
+    return Response.json({
+      result: result,
+    });
+  } catch (e) {
+    console.error("Database operation failed:", e);
+    return Response.json({ error: (e as Error).message }, { status: 500 });
+  }
+});
 
 
 
