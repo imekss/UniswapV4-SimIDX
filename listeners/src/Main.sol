@@ -11,15 +11,15 @@ contract Triggers is BaseTriggers {
         PoolManagerListener listener = new PoolManagerListener();
         addTrigger(
             chainContract(Chains.Ethereum, POOLMANAGER_ETHEREUM),
-            listener.triggerOnInitializeFunction()
+            listener.triggerOnInitializeEvent()
         );
         addTrigger(
             chainContract(Chains.Unichain, POOLMANAGER_UNICHAIN),
-            listener.triggerOnInitializeFunction()
+            listener.triggerOnInitializeEvent()
         );
         addTrigger(
             chainContract(Chains.Base, POOLMANAGER_BASE),
-            listener.triggerOnInitializeFunction()
+            listener.triggerOnInitializeEvent()
         );
     }
 }
