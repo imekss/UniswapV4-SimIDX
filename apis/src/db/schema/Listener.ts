@@ -17,18 +17,3 @@ export const poolInitialized = table("pool_initialized", {
   sqrtPriceX96: db.uint160('sqrt_price_x96'),
   tick: db.int24('tick'),
 })
-
-export const poolSwap = table("pool_swap", {
-  chainId: db.uint64('chain_id'),
-  txnHash: db.bytes32('txn_hash'),
-  blockNumber: db.uint256('block_number'),
-  blockTimestamp: db.uint256('block_timestamp'),
-  id: db.bytes32('id'),
-  sender: db.address('sender'),
-  amount0: db.int128('amount0'),
-  amount1: db.int128('amount1'),
-  sqrtPriceX96: db.uint160('sqrt_price_x96'),
-  liquidity: db.uint128('liquidity'),
-  tick: db.int24('tick'),
-  fee: db.uint24('fee'),
-})

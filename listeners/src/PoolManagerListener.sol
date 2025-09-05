@@ -5,7 +5,9 @@ import "sim-idx-generated/Generated.sol";
 
 
 
-contract PoolManagerListener is PoolManager$OnInitializeEvent, PoolManager$OnSwapEvent {
+// contract PoolManagerListener is PoolManager$OnInitializeEvent , PoolManager$OnSwapEvent {
+
+contract PoolManagerListener is PoolManager$OnInitializeEvent {
     event PoolInitialized(
         uint64 chainId,
         bytes32 txnHash,
@@ -22,20 +24,20 @@ contract PoolManagerListener is PoolManager$OnInitializeEvent, PoolManager$OnSwa
   
     );
 
-    event PoolSwap(
-        uint64 chainId,
-        bytes32 txnHash,
-        uint256 blockNumber,
-        uint256 blockTimestamp,
-        bytes32 id,
-        address sender,
-        int128 amount0,
-        int128 amount1,
-        uint160 sqrtPriceX96,
-        uint128 liquidity,
-        int24 tick,
-        uint24 fee
-    );
+    // event PoolSwap(
+    //     uint64 chainId,
+    //     bytes32 txnHash,
+    //     uint256 blockNumber,
+    //     uint256 blockTimestamp,
+    //     bytes32 id,
+    //     address sender,
+    //     int128 amount0,
+    //     int128 amount1,
+    //     uint160 sqrtPriceX96,
+    //     uint128 liquidity,
+    //     int24 tick,
+    //     uint24 fee
+    // );
 
 
     function onInitializeEvent(
@@ -58,24 +60,24 @@ contract PoolManagerListener is PoolManager$OnInitializeEvent, PoolManager$OnSwa
         );
     }
 
-    function onSwapEvent(
-        EventContext memory ctx,
-        PoolManager$SwapEventParams memory inputs
-    ) external override {
-        emit PoolSwap(
-            uint64(block.chainid),
-            ctx.txn.hash(),
-            block.number,
-            block.timestamp,
-            inputs.id,
-            inputs.sender,
-            inputs.amount0,
-            inputs.amount1,
-            inputs.sqrtPriceX96,
-            inputs.liquidity,
-            inputs.tick,
-            inputs.fee
+    // function onSwapEvent(
+    //     EventContext memory ctx,
+    //     PoolManager$SwapEventParams memory inputs
+    // ) external override {
+    //     emit PoolSwap(
+    //         uint64(block.chainid),
+    //         ctx.txn.hash(),
+    //         block.number,
+    //         block.timestamp,
+    //         inputs.id,
+    //         inputs.sender,
+    //         inputs.amount0,
+    //         inputs.amount1,
+    //         inputs.sqrtPriceX96,
+    //         inputs.liquidity,
+    //         inputs.tick,
+    //         inputs.fee
 
-        );
-    }
+    //     );
+    // }
 }
